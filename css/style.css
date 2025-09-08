@@ -1,7 +1,7 @@
 :root{
   --navy:#0f2440; /* deep navy */
   --navy-2:#173350; /* lighter navy */
-  --accent:#ffcf33; /* neon yellow */
+  --accent:#e7d468; /* neon yellow */
   --accent-2:#ff9f3b; /* orange accent */
   --muted:#c8d6e5;
   --card:#f7f9fb;
@@ -14,7 +14,7 @@ html,body{height:100%}
 body{
   margin:0;
   font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial;
-  background:linear-gradient(180deg,var(--navy) 0%, #0b2a45 60%);
+  background:linear-gradient(180deg,var(--navy) 0%, #000000 60%);
   color:#eef6fb;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -29,9 +29,23 @@ body{
 /* Header */
 .site-header{position:sticky;top:0;background:linear-gradient(180deg,rgba(4,19,32,0.6),rgba(4,19,32,0.2));backdrop-filter:blur(6px);z-index:40}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{height:44px}
-.brand-name{font-family:'Alfa Slab One',serif;font-size:20px;color:var(--accent)}
+.brand{display:flex;align-items:center;gap:17px}
+.logo{height: 70px}
+.brand-name{font-family:'Alfa Slab One',serif;font-size:26px;color:var(--accent)}
 .nav a{color:var(--muted);margin-left:18px;text-decoration:none}
 .btn-outline{border:1px solid rgba(255,255,255,0.12);padding:8px 12px;border-radius:8px}
 
+/* Hero */
+.hero{padding:64px 0 40px;position:relative;z-index:10}
+.hero-inner{display:flex;gap:24px;align-items:center}
+.hero-left{flex:1}
+.hero-right{flex:0 0 360px}
+.hero-title{font-family:'Lilita One',cursive;font-size:44px;margin:0 0 12px;color:var(--accent);text-shadow:0 4px 18px rgba(255,207,51,0.2)}
+.hero-sub{margin-bottom:18px;color:var(--muted)}
+.cta-row{display:flex;gap:12px;margin-bottom:12px}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;padding:12px 18px;border-radius:12px;color:#061224;font-weight:700;cursor:pointer}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);padding:12px 18px;border-radius:12px;color:var(--muted)}
+.highlights{list-style:none;margin-top:12px;color:var(--muted);display:flex;gap:12px}
+
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:18px;border-radius:16px;box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+.hero-card img{width:100%;display:block}
