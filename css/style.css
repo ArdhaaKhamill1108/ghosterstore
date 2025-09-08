@@ -1,0 +1,37 @@
+:root{
+  --navy:#0f2440; /* deep navy */
+  --navy-2:#173350; /* lighter navy */
+  --accent:#ffcf33; /* neon yellow */
+  --accent-2:#ff9f3b; /* orange accent */
+  --muted:#c8d6e5;
+  --card:#f7f9fb;
+  --glass: rgba(255,255,255,0.06);
+}
+
+/* Basic reset */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial;
+  background:linear-gradient(180deg,var(--navy) 0%, #0b2a45 60%);
+  color:#eef6fb;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{width:92%;max-width:1140px;margin:0 auto}
+
+/* background animated container for floating shapes */
+.background{
+  position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;
+}
+
+/* Header */
+.site-header{position:sticky;top:0;background:linear-gradient(180deg,rgba(4,19,32,0.6),rgba(4,19,32,0.2));backdrop-filter:blur(6px);z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:44px}
+.brand-name{font-family:'Alfa Slab One',serif;font-size:20px;color:var(--accent)}
+.nav a{color:var(--muted);margin-left:18px;text-decoration:none}
+.btn-outline{border:1px solid rgba(255,255,255,0.12);padding:8px 12px;border-radius:8px}
+
